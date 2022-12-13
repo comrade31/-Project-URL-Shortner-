@@ -2,7 +2,7 @@ const express = require ('express')
 const app = express()
 const bodyparser = require ('body-parser')
 const mongoose = require("mongoose")
-const routes = require('./route/route.js')
+const routes = require('./routes/route')
 
 mongoose.set('strictQuery', true)
 
