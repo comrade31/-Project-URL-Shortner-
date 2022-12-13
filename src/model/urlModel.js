@@ -18,7 +18,7 @@ const urlSchema = new mongoose.Schema({
         required: true,
         unique : true,
     },
-})
+},{ versionKey:false})
 
 
 module.exports = mongoose.model('url', urlSchema)
