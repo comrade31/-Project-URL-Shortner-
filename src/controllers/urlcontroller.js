@@ -2,16 +2,16 @@ const urlModel = require("../model/urlmodel")
 const mongoose = require("mongoose")
 const shortid = require("shortid")
 const { valid, regForUrl } = require("../validator/validation")
-const redis = require('redis')
-const { promisify } = require('util')
+const redis = require('redis')  
+const { promisify } = require('util')   
 
 //1. Connect to the redis server
 const redisClient = redis.createClient(
-    18463,
-    "redis-18463.c212.ap-south-1-1.ec2.cloud.redislabs.com",
+    13703,
+    "redis-13703.c305.ap-south-1-1.ec2.cloud.redislabs.com",
     { no_ready_check: true }
 );
-redisClient.auth("CjjQKk33DuzQy1JciZdkfIzOteeyMdA6", function (err) {
+redisClient.auth("HnOpYQssk9vIzLSrGEJD4qBRhN9NUIKm", function (err) {
     if (err) throw err;
 });
 
